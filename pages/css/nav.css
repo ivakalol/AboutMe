@@ -27,7 +27,7 @@ header {
 .nav-menu a {
   text-decoration: none;
   color: white;
-  font-size: 2.5vh;
+  font-size: calc(0.85vh + 0.85vw);
   padding: 1vh 2vh;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 5px;
@@ -111,14 +111,17 @@ header {
 
 /* Hamburger Menu Icon */
 .menu-icon {
-  font-size: calc(2vh + 1.5vw);
+  font-size: calc(2.5vh + 2.5vw);
   cursor: pointer;
-  color: white;
+  color: rgb(255, 255, 255);
   position: fixed;
   margin-right: calc(0.9vw + 0.1vh);
-  top: 10px;
-  right: 10px;
+  top: calc(0.5vh + 0.5vw);
+  right: calc(0.5vh + 0.5vw);
   z-index: 1000;
+  padding: calc(0.1vh + 0.2vw); /* Adds some space around the icon */
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent black background */
+  border-radius: calc(0.5vw + 0.5vh); /* Rounded corners for the bar */
 }
 
 
@@ -132,7 +135,7 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
-  padding-top: 5vh;
+  padding-top: calc(5vh + 5vw);
   text-align: center;
 }
 .dropdown-menu ul {
@@ -152,7 +155,7 @@ header {
   transition: background-color 0.3s, color 0.3s;
 }
 .dropdown-menu a:hover {
-  background-color: #8a7b61;
+  background-color: rgb(122, 105, 78, 0.5);
   color: #fff;
 }
 
@@ -163,7 +166,7 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1437px) {
   /* Hide the traditional menu if the screen is small */
   .nav-menu {
       display: none;
