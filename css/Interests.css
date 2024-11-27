@@ -1,0 +1,114 @@
+
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 0;
+}
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+#info {
+    font-size: 2.5vh;
+    margin: 0;
+}
+.text-overlay h1 {
+    font-size: 4.5vh;
+    margin: 1vh;
+}
+.text-overlay p {
+    font-size: 3vh;
+}
+
+
+/* Main Section */
+main {
+    padding: 3vh;
+    color: white;
+}
+.interests-content {
+    max-width: calc(50vw + 50vh);
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: calc(1vh + 1vw);
+    text-align: center;
+    background-image: url('/media/images/noise/black-felt.png');
+    background-size: fixed;
+    background-position: fixed;
+    padding: 5vh;
+    border-radius: calc(1vh + 1vw);
+}
+h2 {
+    color: #464035;
+    margin-top: 3vh;
+}
+.interests-content h2 {
+    color: #372d26;
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.interests-content p {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.interests-content p:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hobby-photo {
+    display: block;
+    margin: 2vh auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.cta{
+    text-align: center;
+}
+.cta h2 q{
+    color: #3f3930;
+}
+.cta a{
+    color:aqua;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5vh;
+    background-image: linear-gradient(#8a7b61, #5d4f38);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
