@@ -1,7 +1,7 @@
 
 // Active button
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('nav.html' ) // Ensure "includes" is in the same directory level as your index.html
+    fetch('nav.html' ) 
     .then(response => {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.text();
