@@ -29,7 +29,7 @@ main {
   line-height: 1.8;
   font-size: calc(1vh + 1vw);
   text-align: center;
-  background-image: url('/media/images/noise/black-felt.png');
+  background-image: url('../media/images/noise/black-felt.png');
   background-attachment: fixed;
   background-size: fixed;
   background-position: fixed;
