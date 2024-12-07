@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places Visited - Ivaylo Chernev</title>
+    <link rel="stylesheet" href="../css/places.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/includes/MAINALL.css">
+    <script src="/js/showMore.js"></script>
+    <script src="/js/nav.js"></script>
+</head>
+<body>
+    <header>
+        <input id="page" type="hidden" value="places">
+        <div class="banner">
+            <img src="../media/images/banner.jpg" alt="Places Visited Banner">
+            <div class="text-overlay">
+                <h1>Places I've Visited</h1>
+                <p>Discover the beautiful destinations I've explored!</p>
+            </div>
+        </div>
+        <div id="nav-placeholder"></div>
+    </header>
+
+    <main>
+        <section class="places-wrapper">
+            <article class="place" id="germany">
+                <h2>Germany</h2>
+                <a href="#germanyphoto"><img src="../media/images/germanyBanner.jpg" alt="Germany"></a>
+
+                <div class="place-info">
+                    <p>Experience the blend of history, technology, and culture in the heart of Europe.</p>
+                    <p id="dots1">...</p>
+                <p id="more1" style="display: none;">
+                    Visiting Germany was a remarkable journey through history and modernity. Starting in Berlin, I was awestruck by the remnants of the Berlin Wall and the bustling streets of Alexanderplatz. The Reichstag Building and Brandenburg Gate were mesmerizing, especially when lit up at night. In Bavaria, I explored the fairy-tale Neuschwanstein Castle and indulged in pretzels and Bavarian beer. The efficient public transportation made hopping between cities like Munich, Frankfurt, and Hamburg seamless. Germany's combination of medieval charm and cutting-edge innovation left a lasting impression.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(1)" id="myBtn1">Show more</button>
+                </div>
+                </div>
+            </article>
+            <article class="place" id="italy">
+                <h2>Italy</h2>
+                <a href="#italyphoto"><img src="../media/images/italy.jpg" alt="Italy"></a>
+
+                <div class="place-info">
+                    <p>Explore the art, architecture, and culinary delights of this iconic Mediterranean destination.</p>
+                    <p id="dots2">...</p>
+                <p id="more2" style="display: none;">
+                    Italy feels like walking through an open-air museum. Rome's Colosseum and Vatican City had me marveling at ancient architecture and art. Florence captivated me with its Renaissance spirit, while Venice felt like a dream with its gondola rides and romantic canals. In Naples, the pizza was life-changing, and the Amalfi Coast's azure waters were breathtaking. Tuscany's rolling vineyards and quaint villages provided a serene escape. Every corner of Italy offered a slice of history, art, and culinary delight.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(2)" id="myBtn2">Show more</button>
+                </div>
+                </div>
+            </article>
+            <article class="place" id="spain">
+                <h2>Spain</h2>
+                <a href="#spainphoto"><img src="../media/images/spain.jpg" alt="Spain"></a>
+
+                <div class="place-info">
+                    <p>Vibrant cities, sunny beaches, and a rich cultural heritage await in Spain.</p>
+                    <p id="dots3">...</p>
+                <p id="more3" style="display: none;">
+                    Spain was an explosion of colors, sounds, and flavors. Barcelona's Sagrada Família and Park Güell showcased Gaudí's genius, while Madrid's Prado Museum took me deep into Spanish art history. In Andalusia, the Alhambra in Granada and the streets of Seville showcased Moorish influences. Valencia introduced me to the vibrant Las Fallas festival, and Ibiza was a party paradise with stunning beaches. Spanish cuisine was unforgettable—paella in Valencia, churros with chocolate in Madrid, and tapas everywhere. Spain's diversity made it unforgettable.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(3)" id="myBtn3">Show more</button>
+                </div>
+                </div>
+            </article>
+            <article class="place" id="greece">
+                <h2>Greece</h2>
+                <a href="#greecephoto"><img src="../media/images/greece.jpg" alt="Greece"></a>
+
+                <div class="place-info">
+                    <p>Dive into the world of ancient mythology, stunning islands, and warm hospitality.</p>
+                    <p id="dots4">...</p>
+                <p id="more4" style="display: none;">
+                    Greece was a journey through ancient wonders and sun-soaked islands. Athens' Acropolis transported me back in time, while Plaka's narrow streets offered charming cafes and shops. Santorini's iconic white-washed buildings with blue domes were even more breathtaking in person, especially during sunset. Mykonos had a lively nightlife, while Crete offered a rich mix of beaches, mountains, and archaeological sites. The food—souvlaki, moussaka, and baklava—was a delight, and the Greek hospitality made me feel at home.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(4)" id="myBtn4">Show more</button>
+                </div>
+                </div>
+            </article>
+            <article class="place" id="turkey">
+                <h2>Turkey</h2>
+                <a href="#turkeyphoto"><img src="../media/images/turkey.jpg" alt="Turkey"></a>
+
+                <div class="place-info">
+                    <p>Turkey is a mesmerizing blend of East and West, where ancient traditions meet vibrant modern culture.</p>
+                    <p id="dots5">...</p>
+                <p id="more5" style="display: none;">
+                    Turkey was a mesmerizing mix of history, culture, and natural beauty. In Istanbul, the Hagia Sophia and Blue Mosque stood as icons of architectural brilliance, while the Grand Bazaar buzzed with life and color. Cappadocia's surreal landscapes, explored by hot air balloon, offered a unique experience with its fairy chimneys and ancient cave dwellings. Pamukkale's white terraces were a natural wonder, and Ephesus transported me to the grandeur of the Roman Empire. The turquoise coast of Antalya offered pristine beaches, perfect for unwinding. Turkish cuisine, with its savory kebabs, rich mezes, and sweet baklava, was unforgettable. Turkey's charm lies in its blend of the ancient and the modern, making every visit unforgettable.</p>
+                <div class="button-container">
+                    <button onclick="toggleContent(5)" id="myBtn5">Show more</button>
+                </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ID Elements -->
+        <div id="germanyphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/germanyBanner.jpg" alt="Travels Photo 1"> </div>
+        <div id="italyphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/italy.jpg" alt="Travels Photo 2"> </div>
+        <div id="spainphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/spain.jpg" alt="Travels Photo 3"> </div>
+        <div id="greecephoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/greece.jpg" alt="Travels Photo 4"> </div>
+        <div id="turkeyphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/turkey.jpg" alt="Travels Photo 1"> </div>
+    </main>
+
+    <footer>
+        <p>©2024 Ivaylo Chernev</p>
+    </footer>
+</body>
+</html>

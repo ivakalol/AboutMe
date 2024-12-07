@@ -153,8 +153,8 @@ header {
   display: block;
 }
 
-/* Media Queries 1437px*/
-@media screen and (max-width: 1437px) {
+/* Media Queries 1240*/
+@media screen and (max-width: 1240px) {
   /* Hide the traditional menu if the screen is small */
   .nav-menu {
       display: none;

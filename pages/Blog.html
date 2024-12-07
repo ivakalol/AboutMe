@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blog - Ivaylo Chernev</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../includes/MAINALL.css"/>
+    <link rel="stylesheet" href="../css/blog.css"/>
+    <script src="../js/showMore.js"></script>
+</head>
+<body>
+    <header>
+        <input id="page" type="hidden" value="blog" />
+        <div class="banner">
+            <img src="../media/images/melnica-cut.jpg" alt="Blog Banner" class="gallery-IEC">
+            <div class="text-overlay">
+                <section>
+                    <h1>My Blog</h1>
+                    <p id="info">Thoughts, Stories, and More</p>
+                    <p><i>Welcome to my blog! Dive into my experiences, ideas, and adventures.</i></p>
+                </section>
+            </div>
+        </div>      
+        <div id="nav-placeholder"></div>
+        <script src="../js/nav.js"></script>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <article class="blog-post">
+                <h2>A Freshman's Journey</h2>
+                <p><small>Posted on November 20, 2024</small></p>
+                <a href="#aubgphoto"><img src="../media/images/AUBG.jpg" alt="Favourite book"></a>
+
+                <p>
+                    Starting at AUBG has been nothing short of exciting. From meeting people from different parts of the world to diving into new subjects, every day has been an adventure. 
+                    Here's a little glimpse of my first week.
+                </p>
+                <p id="dots1">...</p>
+                <p id="more1" style="display: none;">
+                    Orientation week was a whirlwind of events, from campus tours to late-night conversations with new friends. 
+                    For the first time, I felt like I was part of a truly global community. 
+                    The highlight? Trying my first pizza slice at a quaint local pizzeria—it was love at first bite! 
+                    Every corner of AUBG whispers stories of dreams and aspirations, and I am thrilled to start carving mine here.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(1)" id="myBtn1">Show more</button>
+                </div>
+            </article>
+            
+            <article class="blog-post">
+                <h2>Why I Love Volleyball</h2>
+                <p><small>Posted on November 15, 2024</small></p>
+                <a href="#volleyphoto"><img src="../media/images/Volleyball/old.jpg" alt="Favourite book"></a>
+
+                <p>
+                    Volleyball has been a big part of my life. It teaches teamwork, determination, and strategy. Whether it's a friendly game or a competitive match, it always brings joy and energy.
+                </p>
+                <p id="dots2">...</p>
+                <p id="more2" style="display: none;">
+                    I still remember the thrill of my first game—the adrenaline rush as I made my first spike and the cheers of my teammates. 
+                    Volleyball isn't just a sport; it's a way to connect, to build trust, and to learn that every point, whether a win or a loss, shapes you as a player and a person. 
+                    My proudest moment? A triple block with my team that turned the tide of a crucial match.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(2)" id="myBtn2">Show more</button>
+                </div>
+            </article>
+            
+            <article class="blog-post">
+                <h2>Exploring Sofia</h2>
+                <p><small>Posted on November 10, 2024</small></p>
+                <a href="#sofiaphoto"><img src="../media/images/SofiaBlog.jpg" alt="Favourite book"></a>
+
+                <p>
+                    Sofia, my hometown, holds a special place in my heart. From its vibrant streets to its rich history, there's always something to discover. Let me show you around!
+                </p>
+                <p id="dots3">...</p>
+                <p id="more3" style="display: none;">
+                    Vitosha Boulevard buzzes with life, lined with cafés, boutiques, and street performers. 
+                    The golden domes of Alexander Nevsky Cathedral shimmer in the sunlight, a testament to Sofia's rich history. 
+                    But my favorite escape is the quiet embrace of Borisova Gradina Park, where the rustle of leaves and the chirping of birds transport you far from the city's hustle. 
+                    Sofia is a blend of the past and the present—a city that always feels like home.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(3)" id="myBtn3">Show more</button>
+                </div>
+            </article>
+            
+            <article class="blog-post">
+                <h2>My Favorite Reads</h2>
+                <p><small>Posted on November 5, 2024</small></p>
+                <a href="#booksphoto"><img src="../media/images/book.jpg" alt="Favourite book"></a>
+
+                <p>
+                    Books have been my constant companions. From science fiction to biographies, here are some of my favorite reads and why I love them.
+                </p>
+                <p id="dots4">...</p>
+                <p id="more4" style="display: none;">
+                    Two books that have profoundly impacted me are George Orwell's 1984 and Animal Farm. 1984 depicts a dystopian world of constant surveillance and control, challenging us to think about freedom and truth. Animal Farm, on the other hand, cleverly uses animals to show how power can corrupt even the noblest of ideals. Both stories are timeless and thought-provoking, offering lessons that stay with you long after reading.
+                </p>
+                <div class="button-container">
+                    <button onclick="toggleContent(4)" id="myBtn4">Show more</button>
+                </div>
+            </article>
+                      
+        </section>
+
+        <!-- Photos -->
+        <div id="aubgphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/AUBG.jpg" alt="Travels Photo 2"> </div>
+        <div id="volleyphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/Volleyball/old.jpg" alt="Travels Photo 3"> </div>
+        <div id="sofiaphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/SofiaBlog.jpg" alt="Travels Photo 4"> </div>
+        <div id="booksphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/book.jpg" alt="Books Photo 1"> </div>
+    </main>
+
+    <footer>
+        <p>©2024, made by I. Chernev</p>
+    </footer>
+</body>
+</html>

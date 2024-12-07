@@ -6,6 +6,49 @@ html, body {
     overflow-x: hidden; 
     background-image:linear-gradient( #504637, #8a7b61, #8a7b61);
     scrollbar-width: thin;
+    scroll-behavior: smooth;
     scrollbar-color: #8a7b61 rgba(0, 0, 0, 0.3); 
     font-family: 'Georgia', serif;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 0;
+}
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    overflow: hidden;
+}
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: calc(1.4vw + 1.4vh);
+}
+#info {
+    font-size: calc(0.7vw + 1.3vh);
+    margin: 0;
+}
+.text-overlay h1 {
+    font-size: calc(1.9vw + 2.0vh);
+    margin: 1vh;
+}
+.text-overlay p {
+    font-size: calc(1vw + 1.6vh);
 }

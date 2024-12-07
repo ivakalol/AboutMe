@@ -1,51 +1,9 @@
-
-
-/* Header Section */
-header {
-    text-align: center;
-    padding: 0;
-}
-.banner {
-    position: relative;
-    width: 100vw;
-    height: 60vh;
-    overflow: hidden;
-}
-.banner img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-#info {
-    font-size: 2.5vh;
-    margin: 0;
-}
-.text-overlay h1 {
-    font-size: 4.5vh;
-    margin: 1vh;
-}
-.text-overlay p {
-    font-size: 3vh;
-}
-
+/* Header + body and html are in /includes/MAINALL.css*/
 
 /* Main Section */
 main {
-    padding: 3vh;
+    margin-Top: calc(1vw + 1vh);
+    padding: 2vh;
     color: white;
 }
 .interests-content {
@@ -55,6 +13,7 @@ main {
     font-size: calc(1vh + 1vw);
     text-align: center;
     background-image: url('/media/images/noise/black-felt.png');
+    background-attachment: fixed;
     background-size: fixed;
     background-position: fixed;
     padding: 5vh;
@@ -87,10 +46,12 @@ h2 {
 .hobby-photo {
     display: block;
     margin: 2vh auto;
-    max-width: 100%;
-    height: auto;
+    width: 70vw;
+    height: calc(40vh + 40vw);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    object-position: center; 
 }
 .cta{
     text-align: center;

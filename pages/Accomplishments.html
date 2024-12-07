@@ -1,44 +1,132 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accomplishments - Ivaylo Chernev</title>
-    <link rel="stylesheet" href="/css/accomplishments.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/includes/MAINALL.css"/>
+    <link rel="stylesheet" href="../css/accomplishments.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../includes/MAINALL.css"/>
+    <script src="../js/showMore.js"></script>
+    <script src="../js/nav.js"></script>
 </head>
 <body>
     <input id="page" type="hidden" value="accomplishments" />
     <header>
         <div class="banner">
-            <img src="/media/images/NSIcut.jpg" alt="Accomplishments Banner">
+            <img src="../media/images/NSIcut1.jpg" alt="Accomplishments Banner">
             <div class="text-overlay">
                 <h1>Accomplishments</h1>
                 <p id="info">Discover my proudest achievements and milestones.</p>
             </div>
         </div>
         <div id="nav-placeholder"></div>
-        <script src="/js/nav.js"></script>
+        <script src="../js/nav.js"></script>
     </header>
 
     <main>
         <section class="accomplishments-content">
-            <h2>Academic Achievements</h2>
-            <p>[Placeholder for academic milestones, such as awards, recognitions, or projects.]</p>
+            <h2>Career and Achievements</h2>
+            <div class="achievements-grid">
 
-            <h2>Professional Highlights</h2>
-            <p>[Placeholder for internships, jobs, or professional projects that you're proud of.]</p>
+                <!-- Volleyball Player -->
+                <div class="achievement-box" id="volleyball-player">
+                    <a href="#volleyphoto"> <img src="../media/images/Volleyball/VID01429.jpg"> </a>
 
-            <h2>Personal Achievements</h2>
-            <p>[Placeholder for personal goals you've accomplished, like sports, hobbies, or community service.]</p>
+                    <h3>Volleyball Player</h3>
+                    <p>Excelled in tournaments with strong teamwork and strategy. Participated in regional and national level matches, winning multiple titles and fostering leadership skills among team members.</p>
+                    <p id="dots1">...</p>
+                    <p id="more1" style="display: none;">
+                        As a dedicated volleyball player, I excelled in numerous tournaments, demonstrating strong teamwork and strategic skills. I proudly represented my school and the Slavia Volleyball Club, participating in regional and national competitions. Through hard work and dedication, I contributed to multiple championship titles and fostered a positive team environment, developing leadership qualities that have shaped me both on and off the court.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(1)" id="myBtn1">Show more</button>
+                    </div>
+                </div>
+                
+                <!-- Event Organizer -->
+                <div class="achievement-box" id="event-organizer">
+                    <a href="#eventphoto"> <img src="../media/images/Volleyball/team.jpg"> </a>
+
+                    <h3>Event Organizer</h3>
+                    <p>Led a charity volleyball event that raised funds for local community initiatives. Developed skills in coordination, planning, and public speaking while managing teams and volunteers.</p>
+                    <p id="dots2">...</p>
+                    <p id="more2" style="display: none;">
+                        As an event organizer, I successfully led a charity volleyball event that raised funds for local community initiatives. This experience honed my skills in coordination, planning, and public speaking. I effectively managed teams of volunteers and ensured the smooth execution of the event, contributing to its overall success.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(2)" id="myBtn2">Show more</button>
+                    </div>
+                </div>
+                
+                <!-- Martial Arts Enthusiast -->
+                <div class="achievement-box" id="martial-arts">
+                    <a href="#artsphoto"> <img src="../media/images/Taekwondo.jpg"> </a>
+
+                    <h3>Martial Arts Enthusiast</h3>
+                    <p>Earned achievements in Taekwondo with discipline, dedication, and resilience. Participated in local and national tournaments, securing multiple medals and attaining black belt rank.</p>
+                    <p id="dots3">...</p>
+                    <p id="more3" style="display: none;">
+                        As a passionate martial artist, I dedicated myself to Taekwondo, cultivating discipline, dedication, and resilience. I actively participated in local and national tournaments, earning multiple medals and achieving the prestigious black belt rank. My journey in martial arts has instilled in me a strong work ethic and a competitive spirit.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(3)" id="myBtn3">Show more</button>
+                    </div>
+                </div>
+                
+                <!-- Statistics Olympiad Winner -->
+                <div class="achievement-box" id="statistics-olympiad">
+                    <a href="#statisticsphoto"> <img src="../media/images/statisitcsWinners.jpg"> </a>
+
+                    <h3>Statistics Olympiad Winner</h3>
+                    <p>Gained recognition for exceptional problem-solving skills and analytical thinking in the field of statistics. Achieved top positions in regional and national level competitions, contributing to academic success and personal growth.</p>
+                    <p id="dots4">...</p>
+                    <p id="more4" style="display: none;">
+                        I am a dedicated statistician who has excelled in regional and national competitions. My exceptional problem-solving skills and analytical thinking have earned me recognition, including a top position in the prestigious European Statistics Competition 2024. These achievements have significantly contributed to my academic success and personal growth.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(4)" id="myBtn4">Show more</button>
+                    </div>
+                </div>
+                
+                <!-- Caring Sibling -->
+                <div class="achievement-box" id="caring-sibling">
+                    <a href="#siblingphoto"> <img src="../media/images/Family/AzIKiko1.jpg"> </a>
+
+                    <h3>Caring Sibling</h3>
+                    <p>A role model to younger family members, showing the importance of compassion and responsibility. Helped mentor and support siblings in their educational and personal pursuits.</p>
+                    <p id="dots5">...</p>
+                    <p id="more5" style="display: none;">
+                        As a caring sibling, I have always prioritized the well-being of my younger family members. By demonstrating compassion and responsibility, I have strived to be a positive role model. I have actively mentored and supported my siblings in their academic and personal endeavors, fostering a strong bond and encouraging their growth.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(5)" id="myBtn5">Show more</button>
+                    </div>
+                </div>
+                
+                <!-- CS Student -->
+                <div class="achievement-box" id="cs-student">
+                    <a href="#codingphoto"> <img src="../media/images/coding.jpg"> </a>
+
+                    <h3>CS Student</h3>
+                    <p>Exploring the world of technology and innovation. Engaged in coding projects, participated in hackathons, and collaborated with peers on software development initiatives to enhance problem-solving abilities.</p>
+                    <p id="dots6">...</p>
+                    <p id="more6" style="display: none;">
+                        As a dedicated computer science student, I am passionate about exploring the ever-evolving world of technology and innovation. I actively engage in coding projects, participate in hackathons, and collaborate with peers on software development initiatives. These experiences have significantly enhanced my problem-solving abilities and deepened my understanding of computer science principles.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="toggleContent(6)" id="myBtn6">Show more</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <div class="gallery">
-            <img src="/media/images/accomplishment1.jpg" alt="Accomplishment 1">
-            <img src="/media/images/accomplishment2.jpg" alt="Accomplishment 2">
-            <img src="/media/images/accomplishment3.jpg" alt="Accomplishment 3">
-        </div>
+        <div id="volleyphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/Volleyball/VID01429.jpg"> </div>
+        <div id="eventphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/Volleyball/team.jpg"> </div>
+        <div id="artsphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/Taekwondo.jpg"> </div>
+        <div id="statisticsphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/statisitcsWinners.jpg"> </div>
+        <div id="siblingphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/Family/AzIKiko1.jpg"> </div>
+        <div id="codingphoto" class="lightbox"> <a href="#" class="lightbox-close">&times;</a> <img src="../media/images/coding.jpg"> </div>
     </main>
 
     <footer>
