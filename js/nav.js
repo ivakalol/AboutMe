@@ -41,4 +41,5 @@ function stickyNav() {
         console.error("Navigation element not found!");
     }
 }
+
 document.body.addEventListener('scroll', stickyNav);
